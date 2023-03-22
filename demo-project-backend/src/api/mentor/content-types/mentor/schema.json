@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mentors",
+  "info": {
+    "singularName": "mentor",
+    "pluralName": "mentors",
+    "displayName": "mentors",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "email": {
+      "type": "email",
+      "unique": true,
+      "private": true
+    },
+    "address": {
+      "type": "json"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "website": {
+      "type": "string"
+    }
+  }
+}
